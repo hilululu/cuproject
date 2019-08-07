@@ -19,7 +19,7 @@ import blog.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', blog.views.home, name='home'),
+    path('blog/home/', blog.views.home, name='home'),
     path('blog/<int:blog_id>', blog.views.detail, name='detail'),
     path('blog/image/', blog.views.image, name='image'),
     path('blog/guide/', blog.views.guide, name='guide'),
